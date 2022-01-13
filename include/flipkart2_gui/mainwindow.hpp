@@ -8,6 +8,7 @@
 #include <QDebug>
 #include <QObject>
 #include <QString>
+#include <QAbstractItemView>
 #include "rosnode.hpp"
 #include "ui_mainwindow.h"
 
@@ -22,13 +23,14 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void logview();
+
 public slots:
     void slot_pub_bot_1();
     void slot_pub_bot_2();
     void slot_pub_bot_3();
     void slot_pub_bot_4();
-public Q_SLOTS:
-    void updateLoggingView();
+    void slot_induct_1(int x);
+    void slot_induct_2(int y);
 
 private:
     Ui::MainWindow *ui;

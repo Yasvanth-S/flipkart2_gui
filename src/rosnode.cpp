@@ -7,7 +7,9 @@ Rosnode::Rosnode(int argc, char **argv,std::string bot):init_argc(argc),init_arg
 {
     ros::init(init_argc,init_argv,"goal_dest_pub");
     ros::NodeHandle n;
+    ros::start();
     goal_num = n.advertise<std_msgs::Int64>("/flipbot"+bot_no+"/dest",1000);
+    start();
 }
 
 Rosnode::~Rosnode()
@@ -19,6 +21,36 @@ Rosnode::~Rosnode()
     wait();
 }
 
+void Rosnode::run()
+{
+    ros::Rate loop_rate(20);
+    ros::AsyncSpinner spinner(2);
+    spinner.start();
+    while(ros::ok())
+    {
+    int induct_1,induct_2;
+    ros::param::get("/induct1_occupancy",induct_1);
+    if (induct_1 == 0)
+        {
+            Q_EMIT param_1(0);
+        }
+    else
+        {
+            Q_EMIT param_1(1);
+        }
+    ros::param::get("/induct2_occupancy",induct_2);
+    if (induct_2 == 0)
+        {
+            Q_EMIT param_2(0);
+        }
+    else
+        {
+            Q_EMIT param_2(1);
+        }
+    }
+    loop_rate.sleep();
+}
+
 void Rosnode::goalpub(int num)
 {
     std_msgs::Int64 msg;
@@ -27,7 +59,7 @@ void Rosnode::goalpub(int num)
     log(Info,"dest",num);
 }
 
-void Rosnode::log(const LogLevel &level,const std::string &msg,const int &dest)
+void Rosnode::log(const LogLevel &level,const std::string &msg,const double &dest)
 {
     logging_model.insertRows(logging_model.rowCount(),1);
     std::stringstream logging_model_msg;
