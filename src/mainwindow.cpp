@@ -63,6 +63,14 @@ void MainWindow::connections()
     connect(ui->pushButton_34, SIGNAL(clicked()), this, SLOT(slot_pub_bot_4()));
     connect(ui->pushButton_35, SIGNAL(clicked()), this, SLOT(slot_pub_bot_4()));
     connect(ui->pushButton_36, SIGNAL(clicked()), this, SLOT(slot_pub_bot_4()));
+    connect(ui->pushButton_37, SIGNAL(clicked()), this, SLOT(slot_srv_start_bot_1()));
+    connect(ui->pushButton_38, SIGNAL(clicked()), this, SLOT(slot_srv_stop_bot_1()));
+    connect(ui->pushButton_39, SIGNAL(clicked()), this, SLOT(slot_srv_start_bot_2()));
+    connect(ui->pushButton_40, SIGNAL(clicked()), this, SLOT(slot_srv_stop_bot_2()));
+    connect(ui->pushButton_41, SIGNAL(clicked()), this, SLOT(slot_srv_start_bot_3()));
+    connect(ui->pushButton_42, SIGNAL(clicked()), this, SLOT(slot_srv_stop_bot_3()));
+    connect(ui->pushButton_43, SIGNAL(clicked()), this, SLOT(slot_srv_start_bot_4()));
+    connect(ui->pushButton_44, SIGNAL(clicked()), this, SLOT(slot_srv_stop_bot_4()));
 }
 
 void MainWindow::slot_pub_bot_1()
@@ -304,3 +312,44 @@ void MainWindow::slot_induct_2(int x)
         ui->label_32->setStyleSheet(green);
     }
 }
+
+void MainWindow::slot_srv_start_bot_1()
+{
+    bot_1.service(0);
+}
+
+void MainWindow::slot_srv_stop_bot_1()
+{
+    bot_1.service(1);
+}
+
+void MainWindow::slot_srv_start_bot_2()
+{
+    bot_2.service(0);
+}
+
+void MainWindow::slot_srv_stop_bot_2()
+{
+    bot_2.service(1);
+}
+
+void MainWindow::slot_srv_start_bot_3()
+{
+    bot_3.service(0);
+}
+
+void MainWindow::slot_srv_stop_bot_3()
+{
+    bot_3.service(1);
+}
+
+void MainWindow::slot_srv_start_bot_4()
+{
+    bot_4.service(0);
+}
+
+void MainWindow::slot_srv_stop_bot_4()
+{
+    bot_4.service(1);
+}
+

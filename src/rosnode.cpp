@@ -9,6 +9,7 @@ Rosnode::Rosnode(int argc, char **argv,std::string bot):init_argc(argc),init_arg
     ros::NodeHandle n;
     ros::start();
     goal_num = n.advertise<std_msgs::Int64>("/flipbot"+bot_no+"/dest",1000);
+    srv_start_stop = n.serviceClient<flipkart2_srv::BotInterupt>("flipbot"+bot_no+"botStop");
     start();
 }
 
@@ -59,6 +60,17 @@ void Rosnode::goalpub(int num)
     log(Info,"dest",num);
 }
 
+void Rosnode::service(int num)
+{
+    flipkart2_srv::BotInterupt srv;
+    srv.request.pause = num;
+    log(Info,"SERVICE",srv.request.pause);
+    if(srv_start_stop.call(srv))
+    {
+        log(Info,"SERVICE",num);
+    }
+}
+
 void Rosnode::log(const LogLevel &level,const std::string &msg,const double &dest)
 {
     logging_model.insertRows(logging_model.rowCount(),1);
@@ -95,5 +107,6 @@ void Rosnode::log(const LogLevel &level,const std::string &msg,const double &des
     logging_model.setData(logging_model.index(logging_model.rowCount()-1),new_row);
     Q_EMIT loggingUpdated();
 }
+
 
 

@@ -11,6 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
     roscpp 
     sensor_msgs
     std_msgs
+    message_generation
+    flipkart2_srv
     )
 include_directories(${catkin_INCLUDE_DIRS})
 catkin_package()
@@ -36,6 +38,7 @@ catkin_package()
 include_directories( ${catkin_INCLUDE_DIRS})
 file(GLOB_RECURSE QT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/*.cpp )
 add_executable(flipkart2_gui  ${QT_SOURCES} ${QT_MOC_HPP} ${UI_HEADERS})
+add_dependencies(flipkart2_gui ${catkin_EXPORTED_TARGETS} flipkart2_srv_generate_messages_cpp)
 target_link_libraries(flipkart2_gui ${QT_LIBRARIES} ${catkin_LIBRARIES})
 install(TARGETS flipkart2_gui RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")

@@ -16,6 +16,13 @@
     <height>0</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <pointsize>20</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -32,18 +39,15 @@
     <layout class="QGridLayout" name="gridLayout">
      <item row="1" column="3">
       <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Y</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>YAW</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -117,6 +121,13 @@
      </item>
      <item row="0" column="3">
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>X</string>
        </property>
@@ -198,6 +209,23 @@
        </property>
       </widget>
      </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>25</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>YAW</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QListView" name="listView">
@@ -209,19 +237,33 @@
       <height>401</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>549</y>
+      <y>559</y>
       <width>551</width>
-      <height>501</height>
+      <height>491</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="1" column="3">
       <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Y</string>
        </property>
@@ -232,6 +274,13 @@
      </item>
      <item row="2" column="3">
       <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>25</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>YAW</string>
        </property>
@@ -307,6 +356,13 @@
      </item>
      <item row="0" column="3">
       <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>X</string>
        </property>
@@ -399,6 +455,13 @@
       <height>411</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_3">
     <property name="geometry">
@@ -412,6 +475,13 @@
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="1" column="3">
       <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Y</string>
        </property>
@@ -422,6 +492,13 @@
      </item>
      <item row="2" column="3">
       <widget class="QLabel" name="label_14">
+       <property name="font">
+        <font>
+         <pointsize>25</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>YAW</string>
        </property>
@@ -497,6 +574,13 @@
      </item>
      <item row="0" column="3">
       <widget class="QLabel" name="label_15">
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>X</string>
        </property>
@@ -589,19 +673,33 @@
       <height>401</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_4">
     <property name="geometry">
      <rect>
       <x>899</x>
       <y>559</y>
-      <width>571</width>
+      <width>561</width>
       <height>491</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_4">
      <item row="1" column="3">
       <widget class="QLabel" name="label_19">
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Y</string>
        </property>
@@ -612,6 +710,11 @@
      </item>
      <item row="2" column="3">
       <widget class="QLabel" name="label_20">
+       <property name="font">
+        <font>
+         <pointsize>25</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>YAW</string>
        </property>
@@ -687,6 +790,13 @@
      </item>
      <item row="0" column="3">
       <widget class="QLabel" name="label_21">
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>X</string>
        </property>
@@ -773,63 +883,18 @@
    <widget class="QListView" name="listView_4">
     <property name="geometry">
      <rect>
-      <x>1480</x>
+      <x>1470</x>
       <y>560</y>
-      <width>311</width>
+      <width>321</width>
       <height>411</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_37">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>450</y>
-      <width>321</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>START/STOP</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_38">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>980</y>
-      <width>321</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>START/STOP</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_39">
-    <property name="geometry">
-     <rect>
-      <x>1470</x>
-      <y>450</y>
-      <width>321</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>START/STOP</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_40">
-    <property name="geometry">
-     <rect>
-      <x>1480</x>
-      <y>980</y>
-      <width>311</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>START/STOP</string>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
     </property>
    </widget>
    <widget class="QLabel" name="label_25">
@@ -840,6 +905,13 @@
       <width>941</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="text">
      <string>BOT_1</string>
@@ -857,6 +929,13 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>BOT_2</string>
     </property>
@@ -872,6 +951,13 @@
       <width>881</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="text">
      <string>BOT_3</string>
@@ -889,6 +975,13 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>BOT_4</string>
     </property>
@@ -899,10 +992,10 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>1799</x>
-      <y>40</y>
-      <width>111</width>
-      <height>1011</height>
+      <x>1800</x>
+      <y>10</y>
+      <width>117</width>
+      <height>1031</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -923,6 +1016,13 @@
      </property>
      <item>
       <widget class="QLabel" name="label_29">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>INDUCT_1</string>
        </property>
@@ -955,6 +1055,13 @@
      </item>
      <item>
       <widget class="QLabel" name="label_31">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>INDUCT_2</string>
        </property>
@@ -996,6 +1103,166 @@
       </spacer>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_37">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>450</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_38">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>450</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>STOP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_39">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>980</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_40">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>980</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>STOP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_41">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>450</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_42">
+    <property name="geometry">
+     <rect>
+      <x>1640</x>
+      <y>450</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>STOP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_43">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>980</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_44">
+    <property name="geometry">
+     <rect>
+      <x>1630</x>
+      <y>980</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>STOP</string>
+    </property>
    </widget>
   </widget>
  </widget>

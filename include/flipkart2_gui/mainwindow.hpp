@@ -9,7 +9,7 @@
 #include <QObject>
 #include <QString>
 #include <QAbstractItemView>
-#include "rosnode.hpp"
+#include "../flipkart2_gui/rosnode.hpp"
 #include "ui_mainwindow.h"
 
 namespace Ui{
@@ -29,6 +29,14 @@ public slots:
     void slot_pub_bot_2();
     void slot_pub_bot_3();
     void slot_pub_bot_4();
+    void slot_srv_start_bot_1();
+    void slot_srv_start_bot_2();
+    void slot_srv_start_bot_3();
+    void slot_srv_start_bot_4();
+    void slot_srv_stop_bot_1();
+    void slot_srv_stop_bot_2();
+    void slot_srv_stop_bot_3();
+    void slot_srv_stop_bot_4();
     void slot_induct_1(int x);
     void slot_induct_2(int y);
 
@@ -42,3 +50,4 @@ private:
 };
 
 #endif // MAINWINDOW_HPP
+

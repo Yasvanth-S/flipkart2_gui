@@ -7,7 +7,9 @@
 #include <std_msgs/String.h>
 #include <std_msgs/Int64.h>
 #include <geometry_msgs/Twist.h>
+#include "flipbot2_msg/BotInterupt.h"
 #include <thread>
+#include <boost/core/ref.hpp>
 #include <sstream>
 #include <QDebug>
 #include <QThread>
@@ -32,9 +34,10 @@ public:
              Fatal
      };
     void goalpub(int num);
+    void service(int num);
     QStringListModel * loggingModel() { return &logging_model; }
     void log( const LogLevel &level, const std::string &msg, const double &dest);
-    
+
 Q_SIGNALS:
     void loggingUpdated();
     void rosShutdown();
@@ -46,7 +49,9 @@ private:
     char **init_argv;
     std::string bot_no;
     ros::Publisher goal_num;
+    ros::ServiceClient srv_start_stop;
     QStringListModel logging_model;
 };
 
 #endif // ROSNODE_HPP
+
