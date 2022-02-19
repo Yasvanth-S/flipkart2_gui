@@ -37,10 +37,30 @@ public:
     void service(int num);
     QStringListModel * loggingModel() { return &logging_model; }
     void log( const LogLevel &level, const std::string &msg, const double &dest);
+    void cmd1callback(const geometry_msgs::Twist::ConstPtr &vel);
+    void cmd2callback(const geometry_msgs::Twist::ConstPtr &vel);
+    void cmd3callback(const geometry_msgs::Twist::ConstPtr &vel);
+    void cmd4callback(const geometry_msgs::Twist::ConstPtr &vel);
+    static void botcontrol1();
+    static void botcontrol2();
+    static void botcontrol3();
+    static void botcontrol4();
 
 Q_SIGNALS:
     void loggingUpdated();
     void rosShutdown();
+    void lin_x_bot_1(double x);
+    void lin_y_bot_1(double y);
+    void ang_z_bot_1(double z);
+    void lin_x_bot_2(double x);
+    void lin_y_bot_2(double y);
+    void ang_z_bot_2(double z);
+    void lin_x_bot_3(double x);
+    void lin_y_bot_3(double y);
+    void ang_z_bot_3(double z);
+    void lin_x_bot_4(double x);
+    void lin_y_bot_4(double y);
+    void ang_z_bot_4(double z);
     void param_1(int p);
     void param_2(int p);
 
@@ -49,6 +69,10 @@ private:
     char **init_argv;
     std::string bot_no;
     ros::Publisher goal_num;
+    ros::Subscriber cmd1_sub;
+    ros::Subscriber cmd2_sub;
+    ros::Subscriber cmd3_sub;
+    ros::Subscriber cmd4_sub;
     ros::ServiceClient srv_start_stop;
     QStringListModel logging_model;
 };

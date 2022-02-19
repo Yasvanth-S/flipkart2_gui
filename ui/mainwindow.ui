@@ -10,6 +10,12 @@
     <height>1080</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="minimumSize">
    <size>
     <width>0</width>
@@ -24,7 +30,10 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>FLIPKART GUI</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="gridLayoutWidget">
@@ -62,6 +71,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>2</string>
        </property>
@@ -74,6 +90,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>8</string>
@@ -88,6 +111,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>1</string>
        </property>
@@ -101,6 +131,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>9</string>
        </property>
@@ -113,6 +150,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>7</string>
@@ -144,6 +188,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>5</string>
        </property>
@@ -156,6 +207,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>6</string>
@@ -170,6 +228,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>4</string>
        </property>
@@ -182,6 +247,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>3</string>
@@ -234,7 +306,7 @@
       <x>570</x>
       <y>40</y>
       <width>321</width>
-      <height>401</height>
+      <height>321</height>
      </rect>
     </property>
     <property name="font">
@@ -297,6 +369,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>2</string>
        </property>
@@ -309,6 +388,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>8</string>
@@ -323,6 +409,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>1</string>
        </property>
@@ -336,6 +429,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>9</string>
        </property>
@@ -348,6 +448,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>7</string>
@@ -379,6 +486,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>5</string>
        </property>
@@ -391,6 +505,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>6</string>
@@ -405,6 +526,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>4</string>
        </property>
@@ -417,6 +545,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>3</string>
@@ -452,7 +587,7 @@
       <x>570</x>
       <y>560</y>
       <width>321</width>
-      <height>411</height>
+      <height>331</height>
      </rect>
     </property>
     <property name="font">
@@ -515,6 +650,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>2</string>
        </property>
@@ -527,6 +669,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>8</string>
@@ -541,6 +690,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>1</string>
        </property>
@@ -554,6 +710,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>9</string>
        </property>
@@ -566,6 +729,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>7</string>
@@ -597,6 +767,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>5</string>
        </property>
@@ -609,6 +786,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>6</string>
@@ -623,6 +807,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>4</string>
        </property>
@@ -635,6 +826,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>3</string>
@@ -670,7 +868,7 @@
       <x>1470</x>
       <y>40</y>
       <width>321</width>
-      <height>401</height>
+      <height>321</height>
      </rect>
     </property>
     <property name="font">
@@ -731,6 +929,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>2</string>
        </property>
@@ -743,6 +948,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>8</string>
@@ -757,6 +969,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>1</string>
        </property>
@@ -770,6 +989,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>9</string>
        </property>
@@ -782,6 +1008,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>7</string>
@@ -813,6 +1046,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>5</string>
        </property>
@@ -825,6 +1065,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>6</string>
@@ -839,6 +1086,13 @@
          <height>100</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>4</string>
        </property>
@@ -851,6 +1105,13 @@
          <width>0</width>
          <height>100</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>3</string>
@@ -886,7 +1147,7 @@
       <x>1470</x>
       <y>560</y>
       <width>321</width>
-      <height>411</height>
+      <height>331</height>
      </rect>
     </property>
     <property name="font">
@@ -902,7 +1163,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>941</width>
+      <width>881</width>
       <height>21</height>
      </rect>
     </property>
@@ -925,7 +1186,7 @@
      <rect>
       <x>10</x>
       <y>530</y>
-      <width>941</width>
+      <width>881</width>
       <height>21</height>
      </rect>
     </property>
@@ -946,9 +1207,9 @@
    <widget class="QLabel" name="label_27">
     <property name="geometry">
      <rect>
-      <x>910</x>
+      <x>900</x>
       <y>10</y>
-      <width>881</width>
+      <width>891</width>
       <height>21</height>
      </rect>
     </property>
@@ -969,9 +1230,9 @@
    <widget class="QLabel" name="label_28">
     <property name="geometry">
      <rect>
-      <x>910</x>
+      <x>900</x>
       <y>530</y>
-      <width>1001</width>
+      <width>891</width>
       <height>21</height>
      </rect>
     </property>
@@ -995,7 +1256,7 @@
       <x>1800</x>
       <y>10</y>
       <width>117</width>
-      <height>1031</height>
+      <height>1041</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -1262,6 +1523,86 @@
     </property>
     <property name="text">
      <string>STOP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_45">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>370</y>
+      <width>321</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>BOT1_CONTROL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_46">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>900</y>
+      <width>321</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>BOT2_CONTROL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_47">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>370</y>
+      <width>321</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>BOT3_CONTROL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_48">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>900</y>
+      <width>321</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>BOT4_CONTROL</string>
     </property>
    </widget>
   </widget>

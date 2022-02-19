@@ -9,7 +9,7 @@ Rosnode::Rosnode(int argc, char **argv,std::string bot):init_argc(argc),init_arg
     ros::NodeHandle n;
     ros::start();
     goal_num = n.advertise<std_msgs::Int64>("/flipbot"+bot_no+"/dest",1000);
-    srv_start_stop = n.serviceClient<flipbot2_msg::BotInterupt>("flipbot"+bot_no+"/botStop");
+    srv_start_stop = n.serviceClient<flipbot2_msg::BotInterupt>("flipbot"+bot_no+"botStop");
     start();
 }
 
@@ -27,6 +27,11 @@ void Rosnode::run()
     ros::Rate loop_rate(20);
     ros::AsyncSpinner spinner(2);
     spinner.start();
+    ros::NodeHandle n;
+    cmd1_sub = n.subscribe("/flipbot1/cmd_vel",1000,&Rosnode::cmd1callback,this);
+    cmd2_sub = n.subscribe("/flipbot2/cmd_vel",1000,&Rosnode::cmd2callback,this);
+    cmd3_sub = n.subscribe("/flipbot3/cmd_vel",1000,&Rosnode::cmd3callback,this);
+    cmd4_sub = n.subscribe("/flipbot4/cmd_vel",1000,&Rosnode::cmd4callback,this);
     while(ros::ok())
     {
     int induct_1,induct_2;
@@ -69,6 +74,102 @@ void Rosnode::service(int num)
     {
         log(Info,"SERVICE",num);
     }
+}
+
+void Rosnode::cmd1callback(const geometry_msgs::Twist::ConstPtr &vel)
+{
+    Q_EMIT lin_x_bot_1(vel->linear.x);
+    Q_EMIT lin_y_bot_1(vel->linear.y);
+    Q_EMIT ang_z_bot_1(vel->angular.z);
+//    log(Info,"X",vel->linear.x);
+//    log(Info,"Y",vel->linear.y);
+//    log(Info,"YAW",vel->angular.z);
+}
+
+void Rosnode::cmd2callback(const geometry_msgs::Twist::ConstPtr &vel)
+{
+    Q_EMIT lin_x_bot_2(vel->linear.x);
+    Q_EMIT lin_y_bot_2(vel->linear.y);
+    Q_EMIT ang_z_bot_2(vel->angular.z);
+//    log(Info,"X",vel->linear.x);
+//    log(Info,"Y",vel->linear.y);
+//    log(Info,"YAW",vel->angular.z);
+}
+
+void Rosnode::cmd3callback(const geometry_msgs::Twist::ConstPtr &vel)
+{
+    Q_EMIT lin_x_bot_3(vel->linear.x);
+    Q_EMIT lin_y_bot_3(vel->linear.y);
+    Q_EMIT ang_z_bot_3(vel->angular.z);
+//    log(Info,"X",vel->linear.x);
+//    log(Info,"Y",vel->linear.y);
+//    log(Info,"YAW",vel->angular.z);
+}
+
+void Rosnode::cmd4callback(const geometry_msgs::Twist::ConstPtr &vel)
+{
+    Q_EMIT lin_x_bot_4(vel->linear.x);
+    Q_EMIT lin_y_bot_4(vel->linear.y);
+    Q_EMIT ang_z_bot_4(vel->angular.z);
+//    log(Info,"X",vel->linear.x);
+//    log(Info,"Y",vel->linear.y);
+//    log(Info,"YAW",vel->angular.z);
+}
+
+void Rosnode::botcontrol1()
+{
+    int check;
+    ros::param::get("flipbot1/bot_control",check);
+    if (check == 0)
+        {
+            ros::param::set("flipbot1/bot_control",1);
+        }
+    else
+        {
+            ros::param::set("flipbot1/bot_control",0);
+        }
+}
+
+void Rosnode::botcontrol2()
+{
+    int check;
+    ros::param::get("flipbot2/bot_control",check);
+    if (check == 0)
+        {
+            ros::param::set("flipbot2/bot_control",1);
+        }
+    else
+        {
+            ros::param::set("flipbot2/bot_control",0);
+        }
+}
+
+void Rosnode::botcontrol3()
+{
+    int check;
+    ros::param::get("flipbot3/bot_control",check);
+    if (check == 0)
+        {
+            ros::param::set("flipbot3/bot_control",1);
+        }
+    else
+        {
+            ros::param::set("flipbot3/bot_control",0);
+        }
+}
+
+void Rosnode::botcontrol4()
+{
+    int check;
+    ros::param::get("flipbot4/bot_control",check);
+    if (check == 0)
+        {
+            ros::param::set("flipbot4/bot_control",1);
+        }
+    else
+        {
+            ros::param::set("flipbot4/bot_control",0);
+        }
 }
 
 void Rosnode::log(const LogLevel &level,const std::string &msg,const double &dest)

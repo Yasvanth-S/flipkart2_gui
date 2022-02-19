@@ -37,8 +37,24 @@ public slots:
     void slot_srv_stop_bot_2();
     void slot_srv_stop_bot_3();
     void slot_srv_stop_bot_4();
+    void slot_flipbot1_botcontrol();
+    void slot_flipbot2_botcontrol();
+    void slot_flipbot3_botcontrol();
+    void slot_flipbot4_botcontrol();
     void slot_induct_1(int x);
     void slot_induct_2(int y);
+    void slot_bot_1_lin_x(double x);
+    void slot_bot_1_lin_y(double y);
+    void slot_bot_1_ang_z(double z);
+    void slot_bot_2_lin_x(double x);
+    void slot_bot_2_lin_y(double y);
+    void slot_bot_2_ang_z(double z);
+    void slot_bot_3_lin_x(double x);
+    void slot_bot_3_lin_y(double y);
+    void slot_bot_3_ang_z(double z);
+    void slot_bot_4_lin_x(double x);
+    void slot_bot_4_lin_y(double y);
+    void slot_bot_4_ang_z(double z);
 
 private:
     Ui::MainWindow *ui;

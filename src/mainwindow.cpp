@@ -71,6 +71,22 @@ void MainWindow::connections()
     connect(ui->pushButton_42, SIGNAL(clicked()), this, SLOT(slot_srv_stop_bot_3()));
     connect(ui->pushButton_43, SIGNAL(clicked()), this, SLOT(slot_srv_start_bot_4()));
     connect(ui->pushButton_44, SIGNAL(clicked()), this, SLOT(slot_srv_stop_bot_4()));
+    connect(&bot_1, SIGNAL(lin_x_bot_1(double)),this,SLOT(slot_bot_1_lin_x(double)));
+    connect(&bot_2, SIGNAL(lin_x_bot_2(double)),this,SLOT(slot_bot_2_lin_x(double)));
+    connect(&bot_3, SIGNAL(lin_x_bot_3(double)),this,SLOT(slot_bot_3_lin_x(double)));
+    connect(&bot_4, SIGNAL(lin_x_bot_4(double)),this,SLOT(slot_bot_4_lin_x(double)));
+    connect(&bot_1, SIGNAL(lin_y_bot_1(double)),this,SLOT(slot_bot_1_lin_y(double)));
+    connect(&bot_2, SIGNAL(lin_y_bot_2(double)),this,SLOT(slot_bot_2_lin_y(double)));
+    connect(&bot_3, SIGNAL(lin_y_bot_3(double)),this,SLOT(slot_bot_3_lin_y(double)));
+    connect(&bot_4, SIGNAL(lin_y_bot_4(double)),this,SLOT(slot_bot_4_lin_y(double)));
+    connect(&bot_1, SIGNAL(ang_z_bot_1(double)),this,SLOT(slot_bot_1_ang_z(double)));
+    connect(&bot_2, SIGNAL(ang_z_bot_2(double)),this,SLOT(slot_bot_2_ang_z(double)));
+    connect(&bot_3, SIGNAL(ang_z_bot_3(double)),this,SLOT(slot_bot_3_ang_z(double)));
+    connect(&bot_4, SIGNAL(ang_z_bot_4(double)),this,SLOT(slot_bot_4_ang_z(double)));
+    connect(ui->pushButton_45, SIGNAL(clicked()), this, SLOT(slot_flipbot1_botcontrol()));
+    connect(ui->pushButton_46, SIGNAL(clicked()), this, SLOT(slot_flipbot2_botcontrol()));
+    connect(ui->pushButton_47, SIGNAL(clicked()), this, SLOT(slot_flipbot3_botcontrol()));
+    connect(ui->pushButton_48, SIGNAL(clicked()), this, SLOT(slot_flipbot4_botcontrol()));
 }
 
 void MainWindow::slot_pub_bot_1()
@@ -289,6 +305,150 @@ void MainWindow::slot_pub_bot_4()
 
 }
 
+void MainWindow::slot_bot_1_lin_x(double x)
+{
+    if (x == 0)
+    {
+        ui->label_4->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_4->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_2_lin_x(double x)
+{
+    if (x == 0)
+    {
+        ui->label_10->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_10->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_3_lin_x(double x)
+{
+    if (x == 0)
+    {
+        ui->label_16->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_16->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_4_lin_x(double x)
+{
+    if (x == 0)
+    {
+        ui->label_22->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_22->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_1_lin_y(double x)
+{
+    if (x == 0)
+    {
+        ui->label_5->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_5->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_2_lin_y(double x)
+{
+    if (x == 0)
+    {
+        ui->label_11->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_11->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_3_lin_y(double x)
+{
+    if (x == 0)
+    {
+        ui->label_17->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_17->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_4_lin_y(double x)
+{
+    if (x == 0)
+    {
+        ui->label_23->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_23->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_1_ang_z(double x)
+{
+    if (x == 0)
+    {
+        ui->label_6->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_6->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_2_ang_z(double x)
+{
+    if (x == 0)
+    {
+        ui->label_12->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_12->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_3_ang_z(double x)
+{
+    if (x == 0)
+    {
+        ui->label_18->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_18->setStyleSheet(green);
+    }
+}
+
+void MainWindow::slot_bot_4_ang_z(double x)
+{
+    if (x == 0)
+    {
+        ui->label_24->setStyleSheet(red);
+    }
+    else
+    {
+        ui->label_24->setStyleSheet(green);
+    }
+}
+
 void MainWindow::slot_induct_1(int x)
 {
     if (x == 1)
@@ -353,3 +513,22 @@ void MainWindow::slot_srv_stop_bot_4()
     bot_4.service(1);
 }
 
+void MainWindow::slot_flipbot1_botcontrol()
+{
+    Rosnode::botcontrol1();
+}
+
+void MainWindow::slot_flipbot2_botcontrol()
+{
+    Rosnode::botcontrol2();
+}
+
+void MainWindow::slot_flipbot3_botcontrol()
+{
+    Rosnode::botcontrol3();
+}
+
+void MainWindow::slot_flipbot4_botcontrol()
+{
+    Rosnode::botcontrol4();
+}
