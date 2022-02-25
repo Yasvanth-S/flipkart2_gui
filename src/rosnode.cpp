@@ -116,59 +116,67 @@ void Rosnode::cmd4callback(const geometry_msgs::Twist::ConstPtr &vel)
 //    log(Info,"YAW",vel->angular.z);
 }
 
-void Rosnode::botcontrol1()
+bool Rosnode::botcontrol1()
 {
     int check;
     ros::param::get("flipbot1/bot_control",check);
     if (check == 0)
         {
             ros::param::set("flipbot1/bot_control",1);
+            return true;
         }
     else
         {
             ros::param::set("flipbot1/bot_control",0);
+            return false;
         }
 }
 
-void Rosnode::botcontrol2()
+bool Rosnode::botcontrol2()
 {
     int check;
     ros::param::get("flipbot2/bot_control",check);
     if (check == 0)
         {
             ros::param::set("flipbot2/bot_control",1);
+            return true;
         }
     else
         {
             ros::param::set("flipbot2/bot_control",0);
+            return false;
         }
 }
 
-void Rosnode::botcontrol3()
+bool Rosnode::botcontrol3()
 {
     int check;
     ros::param::get("flipbot3/bot_control",check);
     if (check == 0)
         {
             ros::param::set("flipbot3/bot_control",1);
+            return true;
         }
     else
         {
             ros::param::set("flipbot3/bot_control",0);
+            return false;
         }
 }
 
-void Rosnode::botcontrol4()
+bool Rosnode::botcontrol4()
 {
     int check;
     ros::param::get("flipbot4/bot_control",check);
     if (check == 0)
         {
             ros::param::set("flipbot4/bot_control",1);
+            return true;
         }
     else
         {
             ros::param::set("flipbot4/bot_control",0);
+            return false;
         }
 }
 

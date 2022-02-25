@@ -515,20 +515,52 @@ void MainWindow::slot_srv_stop_bot_4()
 
 void MainWindow::slot_flipbot1_botcontrol()
 {
-    Rosnode::botcontrol1();
+    bool check =  Rosnode::botcontrol1();
+    if (check == true)
+    {
+        ui->pushButton_45->setStyleSheet(green);
+    }
+    else
+    {
+        ui->pushButton_45->setStyleSheet(red);
+    }
 }
 
 void MainWindow::slot_flipbot2_botcontrol()
 {
-    Rosnode::botcontrol2();
+    bool check =  Rosnode::botcontrol2();
+    if (check == true)
+    {
+        ui->pushButton_46->setStyleSheet(green);
+    }
+    else
+    {
+        ui->pushButton_46->setStyleSheet(red);
+    }
 }
 
 void MainWindow::slot_flipbot3_botcontrol()
 {
-    Rosnode::botcontrol3();
+    bool check =  Rosnode::botcontrol3();
+    if (check == true)
+    {
+        ui->pushButton_47->setStyleSheet(green);
+    }
+    else
+    {
+        ui->pushButton_47->setStyleSheet(red);
+    }
 }
 
 void MainWindow::slot_flipbot4_botcontrol()
 {
-    Rosnode::botcontrol4();
+    bool check =  Rosnode::botcontrol4();
+    if (check == true)
+    {
+        ui->pushButton_48->setStyleSheet(green);
+    }
+    else
+    {
+        ui->pushButton_48->setStyleSheet(red);
+    }
 }

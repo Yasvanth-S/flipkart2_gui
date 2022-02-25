@@ -41,10 +41,10 @@ public:
     void cmd2callback(const geometry_msgs::Twist::ConstPtr &vel);
     void cmd3callback(const geometry_msgs::Twist::ConstPtr &vel);
     void cmd4callback(const geometry_msgs::Twist::ConstPtr &vel);
-    static void botcontrol1();
-    static void botcontrol2();
-    static void botcontrol3();
-    static void botcontrol4();
+    static bool botcontrol1();
+    static bool botcontrol2();
+    static bool botcontrol3();
+    static bool botcontrol4();
 
 Q_SIGNALS:
     void loggingUpdated();
