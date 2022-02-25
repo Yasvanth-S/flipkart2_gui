@@ -9,7 +9,7 @@ Rosnode::Rosnode(int argc, char **argv,std::string bot):init_argc(argc),init_arg
     ros::NodeHandle n;
     ros::start();
     goal_num = n.advertise<std_msgs::Int64>("/flipbot"+bot_no+"/dest",1000);
-    srv_start_stop = n.serviceClient<flipbot2_msg::BotInterupt>("flipbot"+bot_no+"botStop");
+    srv_start_stop = n.serviceClient<flipbot2_msg::BotInterupt>("flipbot"+bot_no+"/botStop");
     start();
 }
 
