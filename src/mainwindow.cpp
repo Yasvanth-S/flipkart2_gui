@@ -26,11 +26,6 @@ MainWindow::MainWindow(QWidget *parent):QMainWindow (parent),ui(new Ui::MainWind
     ui->listView_3->setModel(bot_3.loggingModel());
     ui->listView_4->setModel(bot_4.loggingModel());
     connections();
-    slot_flipbot1_botcontrol();
-    slot_flipbot2_botcontrol();
-    slot_flipbot3_botcontrol();
-    slot_flipbot4_botcontrol();
-
 }
 
 MainWindow::~MainWindow()
