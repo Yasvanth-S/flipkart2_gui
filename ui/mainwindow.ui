@@ -33,7 +33,7 @@
    <string>FLIPKART GUI</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(0, 0, 0);</string>
+   <string notr="true">background-color:rgb(0,0,0);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="gridLayoutWidget">
@@ -45,7 +45,20 @@
       <height>481</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string>background-color:rgb(0,0,0);</string>
+    </property>
     <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="4">
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
      <item row="1" column="3">
       <widget class="QLabel" name="label_2">
        <property name="font">
@@ -55,31 +68,14 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string>Y</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>100</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>2</string>
        </property>
       </widget>
      </item>
@@ -93,18 +89,21 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>8</string>
+        <string>DELHI</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="0">
-      <widget class="QPushButton" name="pushButton">
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pushButton_6">
        <property name="minimumSize">
         <size>
          <width>0</width>
@@ -113,13 +112,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>1</string>
+        <string>HYDERABAD</string>
        </property>
       </widget>
      </item>
@@ -133,33 +135,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
-       <property name="text">
-        <string>9</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="pushButton_7">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>100</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
-        <string>7</string>
+        <string>KOLKATA</string>
        </property>
       </widget>
      </item>
@@ -172,8 +157,110 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string>X</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>CHENNAI</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>PUNE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>AHEMDABAD</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>25</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
+       <property name="text">
+        <string>YAW</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -190,53 +277,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
-       <property name="text">
-        <string>5</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="QPushButton" name="pushButton_6">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>100</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
-        <string>6</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QPushButton" name="pushButton_4">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>100</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>4</string>
+        <string>BANGALORE</string>
        </property>
       </widget>
      </item>
@@ -250,51 +300,49 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
-       <property name="text">
-        <string>3</string>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_4">
        <property name="text">
-        <string/>
+        <string>JAIPUR</string>
        </property>
       </widget>
      </item>
      <item row="1" column="4">
       <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
-     <item row="2" column="4">
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string/>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
        </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="QLabel" name="label_3">
        <property name="font">
         <font>
-         <pointsize>25</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
-       <property name="text">
-        <string>YAW</string>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
+       <property name="text">
+        <string>MUMBAI</string>
        </property>
       </widget>
      </item>
@@ -316,6 +364,9 @@
       <bold>false</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
@@ -326,6 +377,9 @@
       <height>491</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string>background-color:rgb(0,0,0);</string>
+    </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="1" column="3">
       <widget class="QLabel" name="label_7">
@@ -335,6 +389,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>Y</string>
@@ -352,6 +409,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>YAW</string>
@@ -371,13 +431,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>2</string>
+        <string>AHEMDABAD</string>
        </property>
       </widget>
      </item>
@@ -391,13 +454,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>8</string>
+        <string>DELHI</string>
        </property>
       </widget>
      </item>
@@ -411,13 +477,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>1</string>
+        <string>PUNE</string>
        </property>
       </widget>
      </item>
@@ -431,13 +500,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>9</string>
+        <string>KOLKATA</string>
        </property>
       </widget>
      </item>
@@ -451,13 +523,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>7</string>
+        <string>MUMBAI</string>
        </property>
       </widget>
      </item>
@@ -469,6 +544,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>X</string>
@@ -488,13 +566,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>5</string>
+        <string>BANGALORE</string>
        </property>
       </widget>
      </item>
@@ -508,13 +589,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>6</string>
+        <string>HYDERABAD</string>
        </property>
       </widget>
      </item>
@@ -528,13 +612,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>4</string>
+        <string>CHENNAI</string>
        </property>
       </widget>
      </item>
@@ -548,18 +635,24 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>3</string>
+        <string>JAIPUR</string>
        </property>
       </widget>
      </item>
      <item row="0" column="4">
       <widget class="QLabel" name="label_10">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -567,6 +660,9 @@
      </item>
      <item row="1" column="4">
       <widget class="QLabel" name="label_11">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -574,6 +670,9 @@
      </item>
      <item row="2" column="4">
       <widget class="QLabel" name="label_12">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -597,6 +696,9 @@
       <bold>false</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_3">
     <property name="geometry">
@@ -607,6 +709,9 @@
       <height>481</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string>background-color:rgb(0,0,0);</string>
+    </property>
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="1" column="3">
       <widget class="QLabel" name="label_13">
@@ -616,6 +721,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>Y</string>
@@ -633,6 +741,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>YAW</string>
@@ -652,13 +763,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>2</string>
+        <string>AHEMDABAD</string>
        </property>
       </widget>
      </item>
@@ -672,13 +786,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>8</string>
+        <string>DELHI</string>
        </property>
       </widget>
      </item>
@@ -692,13 +809,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>1</string>
+        <string>PUNE</string>
        </property>
       </widget>
      </item>
@@ -712,13 +832,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>9</string>
+        <string>KOLKATA</string>
        </property>
       </widget>
      </item>
@@ -732,13 +855,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>7</string>
+        <string>MUMBAI</string>
        </property>
       </widget>
      </item>
@@ -750,6 +876,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>X</string>
@@ -769,13 +898,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>5</string>
+        <string>BANGALORE</string>
        </property>
       </widget>
      </item>
@@ -789,13 +921,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>6</string>
+        <string>HYDERABAD</string>
        </property>
       </widget>
      </item>
@@ -809,13 +944,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>4</string>
+        <string>CHENNAI</string>
        </property>
       </widget>
      </item>
@@ -829,18 +967,24 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>3</string>
+        <string>JAIPUR</string>
        </property>
       </widget>
      </item>
      <item row="0" column="4">
       <widget class="QLabel" name="label_16">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -848,6 +992,9 @@
      </item>
      <item row="1" column="4">
       <widget class="QLabel" name="label_17">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -855,6 +1002,9 @@
      </item>
      <item row="2" column="4">
       <widget class="QLabel" name="label_18">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -878,6 +1028,9 @@
       <bold>false</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_4">
     <property name="geometry">
@@ -888,6 +1041,9 @@
       <height>491</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string>background-color:rgb(0,0,0);</string>
+    </property>
     <layout class="QGridLayout" name="gridLayout_4">
      <item row="1" column="3">
       <widget class="QLabel" name="label_19">
@@ -897,6 +1053,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>Y</string>
@@ -912,6 +1071,9 @@
         <font>
          <pointsize>25</pointsize>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>YAW</string>
@@ -931,13 +1093,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>2</string>
+        <string>AHEMDABAD</string>
        </property>
       </widget>
      </item>
@@ -951,13 +1116,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>8</string>
+        <string>DELHI</string>
        </property>
       </widget>
      </item>
@@ -971,13 +1139,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>1</string>
+        <string>PUNE</string>
        </property>
       </widget>
      </item>
@@ -991,13 +1162,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>9</string>
+        <string>KOLKATA</string>
        </property>
       </widget>
      </item>
@@ -1011,13 +1185,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>7</string>
+        <string>MUMBAI</string>
        </property>
       </widget>
      </item>
@@ -1029,6 +1206,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>X</string>
@@ -1048,13 +1228,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>5</string>
+        <string>BANGALORE</string>
        </property>
       </widget>
      </item>
@@ -1068,13 +1251,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>6</string>
+        <string>HYDERABAD</string>
        </property>
       </widget>
      </item>
@@ -1088,13 +1274,16 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>4</string>
+        <string>CHENNAI</string>
        </property>
       </widget>
      </item>
@@ -1108,18 +1297,24 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
-        <string>3</string>
+        <string>JAIPUR</string>
        </property>
       </widget>
      </item>
      <item row="0" column="4">
       <widget class="QLabel" name="label_22">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -1127,6 +1322,9 @@
      </item>
      <item row="1" column="4">
       <widget class="QLabel" name="label_23">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -1134,6 +1332,9 @@
      </item>
      <item row="2" column="4">
       <widget class="QLabel" name="label_24">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -1157,6 +1358,9 @@
       <bold>false</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_25">
     <property name="geometry">
@@ -1173,6 +1377,9 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
     </property>
     <property name="text">
      <string>BOT_1</string>
@@ -1197,6 +1404,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
     <property name="text">
      <string>BOT_2</string>
     </property>
@@ -1219,6 +1429,9 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
     </property>
     <property name="text">
      <string>BOT_3</string>
@@ -1243,6 +1456,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
     <property name="text">
      <string>BOT_4</string>
     </property>
@@ -1255,9 +1471,12 @@
      <rect>
       <x>1800</x>
       <y>10</y>
-      <width>117</width>
+      <width>120</width>
       <height>1041</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color:rgb(0,0,0);</string>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <property name="spacing">
@@ -1284,6 +1503,9 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string>background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string>INDUCT_1</string>
        </property>
@@ -1309,6 +1531,9 @@
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
        </property>
+       <property name="styleSheet">
+        <string>background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -1322,6 +1547,9 @@
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string>background-color:rgb(0,0,0);</string>
        </property>
        <property name="text">
         <string>INDUCT_2</string>
@@ -1342,13 +1570,44 @@
          <height>50</height>
         </size>
        </property>
+       <property name="styleSheet">
+        <string>background-color:rgb(0,0,0);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item>
+      <widget class="QPushButton" name="pushButton_49">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>START_ALL</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <spacer name="verticalSpacer">
+       <property name="styleSheet">
+        <string>background-color:rgb(0,0,0);</string>
+       </property>
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
@@ -1358,7 +1617,7 @@
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>600</height>
+         <height>470</height>
         </size>
        </property>
       </spacer>
@@ -1381,6 +1640,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
     <property name="text">
      <string>START</string>
     </property>
@@ -1400,6 +1662,9 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
     </property>
     <property name="text">
      <string>STOP</string>
@@ -1421,6 +1686,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
     <property name="text">
      <string>START</string>
     </property>
@@ -1440,6 +1708,9 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
     </property>
     <property name="text">
      <string>STOP</string>
@@ -1461,6 +1732,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
     <property name="text">
      <string>START</string>
     </property>
@@ -1480,6 +1754,9 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
     </property>
     <property name="text">
      <string>STOP</string>
@@ -1501,6 +1778,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
     <property name="text">
      <string>START</string>
     </property>
@@ -1520,6 +1800,9 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
     </property>
     <property name="text">
      <string>STOP</string>
@@ -1541,6 +1824,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
     <property name="text">
      <string>BOT1_CONTROL</string>
     </property>
@@ -1560,6 +1846,9 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
     </property>
     <property name="text">
      <string>BOT2_CONTROL</string>
@@ -1581,6 +1870,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
+    </property>
     <property name="text">
      <string>BOT3_CONTROL</string>
     </property>
@@ -1600,6 +1892,9 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0);</string>
     </property>
     <property name="text">
      <string>BOT4_CONTROL</string>

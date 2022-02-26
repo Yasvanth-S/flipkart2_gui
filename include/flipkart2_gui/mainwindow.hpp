@@ -41,6 +41,7 @@ public slots:
     void slot_flipbot2_botcontrol();
     void slot_flipbot3_botcontrol();
     void slot_flipbot4_botcontrol();
+    void slot_flipbot_controllall();
     void slot_induct_1(int x);
     void slot_induct_2(int y);
     void slot_bot_1_lin_x(double x);
@@ -55,6 +56,13 @@ public slots:
     void slot_bot_4_lin_x(double x);
     void slot_bot_4_lin_y(double y);
     void slot_bot_4_ang_z(double z);
+    void slot_dest1_sub(int p);
+    void slot_dest2_sub(int p);
+    void slot_dest3_sub(int p);
+    void slot_dest4_sub(int p);
+    void scrol(int num);
+
+
 
 private:
     Ui::MainWindow *ui;
@@ -66,4 +74,3 @@ private:
 };
 
 #endif // MAINWINDOW_HPP
-
